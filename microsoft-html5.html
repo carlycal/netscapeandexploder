@@ -9,6 +9,10 @@
             *{font-family: Arial, Helvetica, sans-serif;font-weight: bold; color: #000000;}
             a:link, a:active {color: #003366;}
             a:visited{color: #0099cc;}
+            #page-wrapper{
+              width: 800px;
+              background-image: url("msft_faux_columns.png");
+            }
             #toolbar {
               width: 100%;
               height: 20px;
@@ -17,6 +21,7 @@
             }
             #toolbar ul {
               padding: 0;
+              margin: 0;
             }
             #toolbar ul li{
               float: left;
@@ -25,22 +30,26 @@
             #home-link {
               float: right;
             }
+            #ad-rotator{
+              margin-left: 136px;
+            }
             nav#sidebar-nav a {font-weight: bold;font-size: small;}
             nav#sidebar-nav ul{list-style: none; padding-left: 0;}
-            div#sidebar {font-size: smaller; background-color: #FFCC00; width: 110px; padding: 3px;}
+            div#sidebar {float: left; font-size: smaller;/* background-color: #FFCC00;*/ width: 110px; padding: 3px;}
             div#sidebar p{margin-top: 30px; font-weight: bold; text-align: center;}
             footer,p{font-size: small; font-weight: normal;}
             footer{text-align: center;}
-            #go-form {text-align: center; width: 550px; clear: both; padding-top: 4px;}
-            #content{width: 620px; padding: 3px;}
+            #go-form {text-align: center; width: 550px; clear: both;background: white; padding-top: 4px;}
+            #content{float: left;width: 620px; padding: 3px; margin-left: 26px;}
             img [alt="MICROSOFT: Where do you want to go today?"]{display: block; margin-bottom: 30px;}
             nav#news a{font-size: larger; margin-right: 1em;}
             nav#news {margin-bottom: 32px;}
           </style>
  	</HEAD>
  	<BODY>
-        		<!--TOOLBAR_START-->
-        		<nav id="toolbar">
+          <div id="page-wrapper">
+          		<!--TOOLBAR_START -->
+          		<nav id="toolbar">
                        			<ul>
                                       				<li>
                                                              					<A HREF="#" TARGET="_top"><IMG SRC="ms_images/home_on.gif" WIDTH=103 HEIGHT=21 ALT="Microsoft Home"></A>
@@ -61,17 +70,17 @@
                        			<div id="home-link">
                                       				<A HREF="#" TARGET="_top"><IMG SRC="ms_images/msft.gif" WIDTH=91 HEIGHT=21 ALT="Microsoft Home"></A>
                        			</div>
-        		</nav>
-        		<!--TOOLBAR_END-->
-        		<FORM id="go-form" ACTION="#" target="_top">
+          		</nav>
+          		<!--TOOLBAR_END-->
+          		<FORM id="go-form" ACTION="#" target="_top">
                        			<SELECT NAME="Target">
                                       				<OPTION SELECTED VALUE="/worldwide/">Select a Location</OPTION><OPTION VALUE="/argentina/">Argentina</OPTION><OPTION VALUE="/australia/">Australia </OPTION><OPTION VALUE="/belgium/">Belgium & Luxemburg</OPTION><OPTION VALUE="/canada/">Canada</OPTION><OPTION VALUE="/caribbean/">Caribbean </OPTION><OPTION VALUE="/chile/">Chile</OPTION><OPTION VALUE="/china/">China</OPTION><OPTION VALUE="/colombia/">Colombia </OPTION><OPTION VALUE="/cze/">Czech Republic </OPTION><OPTION VALUE="/danmark/">Denmark</OPTION><OPTION VALUE="/europe/">Europe </OPTION><OPTION VALUE="/France/">France</OPTION><OPTION VALUE="http://www.microsoft.de/">Germany</OPTION><OPTION VALUE="/hk/">Hong Kong</OPTION><OPTION VALUE="/hun/">Hungary </OPTION><OPTION VALUE="/india/">India </OPTION><OPTION VALUE="/ireland/">Ireland </OPTION><OPTION VALUE="/israel/">Israel</OPTION><OPTION VALUE="/italy/">Italy </OPTION><OPTION VALUE="http://www.microsoft.co.jp/">Japan</OPTION>
                                       				<OPTION VALUE="/korea/">Korea</OPTION><OPTION VALUE="/mexico/">Mexico</OPTION><OPTION VALUE="/middleeast/">Middle East</OPTION><OPTION VALUE="/netherlands/">Netherlands</OPTION><OPTION VALUE="/norge/">Norway</OPTION><OPTION VALUE="/poland/">Poland</OPTION><OPTION VALUE="/portugal/">Portuga</OPTION><OPTION VALUE="/rus/">Russia</OPTION><OPTION VALUE="/slovakia/">Slovakia</OPTION><OPTION VALUE="/slovenija/">Slovenija</OPTION><OPTION VALUE="/southafrica/">South Africa</OPTION><OPTION VALUE="/spain/">Spain</OPTION><OPTION VALUE="/sverige/">Sweden</OPTION><OPTION VALUE="/switzerland/">Switzerland</OPTION><OPTION VALUE="/taiwan/">Taiwan</OPTION><OPTION VALUE="/uk/">United Kingdom</OPTION><OPTION VALUE="/usa/">United States</OPTION><OPTION VALUE="/uruguay/">Uruguay</OPTION>
                        			</SELECT>
                        			<INPUT TYPE=IMAGE SRC="ms_images/gobutton2.gif" width=26 height=26 alt="submit">
-        		</FORM>
-        		<!-- ###### defines content table ###### -->
-        		<div id="sidebar">
+          		</FORM>
+          		<!-- ###### defines content table ###### -->
+          		<div id="sidebar">
                        			<IMG SRC="ms_images/reconstructed/dove.gif"  width="110" height=104 ALT="">
                        			<nav id="sidebar-nav">
                                       				<ul>
@@ -98,14 +107,16 @@
                        			<P>
                                       				<A HREF="#" target="_top"><IMG SRC="ms_images/reconstructed/rsacirated.gif" WIDTH="96" HEIGHT="31" ALT="We rate with RSACi!" ></A>
                        			</P>
-        		</div>
-        		<div id="content">
+          		</div>
+          		<div id="content">
                        			<IMG SRC="ms_images/reconstructed/Banner_tagline.gif" width=388 height=97 ALT="MICROSOFT: Where do you want to go today?">
-                       			<IMG SRC="ms_images/reconstructed/square.gif" ALT="*" width=15 height=15><A HREF="#" TARGET="_top">Be First to Get Visual Basic 5.0 Control Creation Edition Plus Other Tools and Technologies. </A>
+                       			<br><IMG SRC="ms_images/reconstructed/square.gif" ALT="*" width=15 height=15>
+                          <A HREF="#" TARGET="_top">Be First to Get Visual Basic 5.0 Control Creation Edition Plus Other Tools and Technologies. </A>
                        			<P>
                                       				Attend Microsoft's Site Builder Conference Oct. 28-30 in San Jose and be among the first to get the latest Visual Basic 5.0 Control Creation Edition, "Internet Studio," over 20 beta versions of products plus much more
                        			</P>
-                       			<IMG SRC="ms_images/reconstructed/diamond.gif" ALT="*" width=15 height=15><A HREF="#" TARGET="_top">Download the Free Betas of Microsoft Internet News and Chat Servers </A>
+                       			<IMG SRC="ms_images/reconstructed/diamond.gif" ALT="*" width=15 height=15>
+                          <A HREF="#" TARGET="_top">Download the Free Betas of Microsoft Internet News and Chat Servers </A>
                        			<P>
                                       				Build virtual communities on your WEB site. Using Microsoft Internet News and Chat Servers, independent content and service providers can enhance user's activity and involvement.
                        			</P>
@@ -143,20 +154,20 @@
                                        			  </P>
                                           </section>
                           </div>
-        		</div>
-        		<div id="ad-rotator">
+          		</div>
+          		<div id="ad-rotator">
                        			<!-- This is the cell to update with the ad rotator -->
                        			<A HREF="#"><IMG SRC="ms_images/Pacman1.gif" ALT="Return of Arcade: Pac-man" WIDTH=454 HEIGHT=54></A>
-        		</div>
-          
-        		<footer>
+          		</div>
+            
+          		<footer>
                        			Last Updated:
                        			10/18/96 10:25 AM
                           
                        			<br><A HREF="#" TARGET="_top">&copy;1996 Microsoft Corporation</A>
                           
                        			<br><A HREF="#" TARGET="_top">Information about Microsoft.com architecture</A>
-        		</footer>
-          
+          		</footer>
+          </div>  
  	</BODY>
 </HTML>
